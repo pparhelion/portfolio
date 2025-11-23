@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parhelion's Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header container">
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="coming-soon.html">Blog</a>
+                <a href="#contacts">Contact</a>
+            </nav>
+            <div class="controls">
+                <div class="volume-container">
+                    <div id="volume-icon">
+                        <svg id="volume-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <path id="volume-wave-1" d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            <path id="volume-wave-2" d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <canvas id="rain-canvas"></canvas>
+    <div id="main-content">
+        <div>
+            <p id="typewriter-text" class="typewriter"></p>
+            <p id="typewriter-text-2" class="typewriter"></p>
+        </div>
+        <div id="scroll-down-arrow" class="hidden">
+            <a href="#projects"><span></span><span></span></a>
+        </div>
+    </div>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-header">Projects</h2>
+            <div class="section-body">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="control-buttons">
+                                    <div class="control-button close-btn"></div>
+                                    <div class="control-button minimize-btn"></div>
+                                    <div class="control-button maximize-btn"></div>
+                                </div>
+                                <div class="terminal-title">
+                                    <span class="terminal-icon">📂</span> afetar — parhelion@desktop
+                                </div>
+                                <div style="width: 44px;"></div>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line info-text">Receiving objects: 100% (207/207), 68.07 KiB | 9.72 MiB/s, done.</div>
+                                <div class="terminal-line info-text">Resolving deltas: 100% (102/102), done.</div>
+                                <div class="terminal-line"><span class="prompt-arrow">→</span> <span class="directory-path">parhelion@desktop:~$</span> cd home/desktop/afetar</div>
+                                <div class="terminal-line"><span class="prompt-arrow">→</span> <span class="directory-path">afetar-description:(<span class="git-branch">in development</span>):</span>AFETAR connects users to the nearest volunteer instantly with a single touch during emergencies.</div>
+                                <div class="terminal-line"><span class="prompt-arrow">→</span> <span class="directory-path">afetar-github:</span><a href="https://github.com/Hasmolam/afetar" target="_blank">https://github.com/Hasmolam/afetar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="control-buttons">
+                                    <div class="control-button close-btn"></div>
+                                    <div class="control-button minimize-btn"></div>
+                                    <div class="control-button maximize-btn"></div>
+                                </div>
+                                <div class="terminal-title">
+                                    <span class="terminal-icon">📂</span> projects — parhelion@desktop
+                                </div>
+                                <div style="width: 44px;"></div>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line info-text">Receiving objects: 40% (80/200), 68.07 KiB | 9.72 MiB/s, done.</div>
+                                <div class="terminal-line info-text">Resolving deltas: 1% (1/100), done.</div>
+                                <div class="terminal-line"><span class="prompt-arrow">→</span> <span class="directory-path">parhelion@desktop:~$</span> ls home/desktop/projects</div>
+                                <div class="terminal-line"><span class="prompt-arrow"></span> <span class="directory-path"></span>afetar coming-soon unknown</div>
+                                <div class="terminal-line"><span class="prompt-arrow">→</span> <span class="directory-path">parhelion@desktop:~$<span class="git-branch"></span></span> cd projects/coming-soon</div>
+                                <div class="terminal-line"><span class="prompt-arrow">→</span> <span class="directory-path">Coming soon...</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts" class="tf-footer">
+        <div class="container">
+            <div class="br-line"></div>
+        </div>
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <p class="title text-has-dot text-caption fw-medium mb-md-0">
+                            <span class="br-dot"></span>
+                            WORKING GLOBALLY
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <p class="footer-heading text-caption fw-medium text-white-64">
+                            ABOUT ME
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <p>Aspiring Software Developer dedicated to continuous learning and professional growth.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <p class="footer-heading text-caption fw-medium text-white-64">
+                            SOCIALS
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <ul class="footer-menu-list mb-0">
+                            <li><a href="https://github.com/pparhelion" target="_blank" class="link letter-space--2 h5">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/kahraman-efe-oz" target="_blank" class="link letter-space--2 h5">LinkedIn</a></li>
+                            <li><a href="https://discordapp.com/users/844173554613747752" target="_blank" class="link letter-space--2 h5">Discord</a></li>
+                            <li><a href="mailto:kahramanefe@proton.me" class="link letter-space--2 h5">Mail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+
+                <div class="bottom">
+                    <p class="text-nocopy text-caption fw-medium letter-space--1 p-0 mb-0">
+                        © 2025 KAHRAMAN ALL RIGHTS RESERVED.
+                    </p>
+                    <a href="#" class="action-go-top tf-link-icon link text-caption fw-medium letter-space--1">
+                        BACK TO TOP
+                        <i class="icon icon-arrow-long-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <audio id="audio-player" src="thankstokaya.mp3"></audio>
+    <audio id="myAudio" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
