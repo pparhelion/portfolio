@@ -1,2 +1,2 @@
 # portfolio
-The portfolio site that I created for fun.
+The portfolio site that I created.
